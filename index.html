@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barra de Mensagens</title>
+  <style>
+    body {
+      background-color: #00ccff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #0099cc;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .message {
+      background-color: #1f39ff;
+      border: 1px solid #dddddd;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .copy-button {
+      background-color: #0099cc;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      float: right;
+    }
+
+    .copy-button:hover {
+      background-color: #006699;
+    }
+    
+    p {
+      color: #ffffff;
+    }
+  </style>
+  <script>
+    function copyMessage(message) {
+      navigator.clipboard.writeText(message);
+      alert("Mensagem copiada!");
+    }
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Mensagens para Ansiedade e Depressão</h1>
+  </div>
+  <div class="container">
+    <section class="message">
+      <p>Você não está sozinho(a). Estou aqui para você e estaremos juntos nessa jornada de superação</p>
+      <button class="copy-button" onclick="copyMessage('Texto de exemplo 1 - Mensagem de apoio e incentivo.')">Copiar</button>
+    </section>
+    <section class="message">
+      <p>É normal sentir-se assim, mas lembre-se que a dor não é permanente. Haverá dias melhores à frente."</p>
+      <button class="copy-button" onclick="copyMessage('Texto de exemplo 2 - Você é forte e capaz de superar qualquer desafio.')">Copiar</button>
+    </section>
+    <section class="message">
+      <p>Cada passo que você dá em direção à cura é uma vitória, mesmo que pareça pequeno. Celebre cada progresso.</p>
+      <button class="copy-button" onclick="copyMessage('Texto de exemplo 3 - Lembre-se que você não está sozinho, estamos aqui para te apoiar.')">Copiar</button>
+    </section>
+    <section class="message">
+      <p>Você é mais forte do que imagina. Ainda que se sinta frágil agora, a coragem dentro de você vai te guiar para um futuro melhor.</p>
+      <button class="copy-button" onclick="copyMessage('Texto de exemplo 4 - Acredite em si mesmo e nas suas capacidades. Você é único e especial.')">Copiar</button>
+    </section>
+  </div>
+</body>
+</html>
